@@ -1,0 +1,436 @@
+@font-face {
+    font-family: "Mona Sans";
+    src: url("/font/MonaSansVF[wdth\,wght\,opsz]-902d64c7ad02.woff2") format("woff2 supports variations"),url("/font/MonaSansVF[wdth\,wght\,opsz]-902d64c7ad02.woff2") format("woff2-variations");
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+    font-display: swap;
+    font-feature-settings: "liga" 0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbfafa
+}
+
+.heading-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 152px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0px 95px;
+    width: 1248px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 1280px;
+}
+
+.bigger {
+    font-weight: 800;
+    font-family: "Mona Sans", "Mona Sans Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 64px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+
+.smaller {
+    margin-top: 40px;
+    color: #59636E;
+    width: 1056px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    font-family: "Mona Sans", "Mona Sans Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.start {
+    font-family: "Mona Sans";
+    padding: 16px 24px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #1b1f23;
+    border: 0;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 24px;
+}
+
+.card {
+    margin: 0 8px;
+    border-radius: 0.75em;
+    box-shadow: 0px 0px 0px 1px #d1d9e0, 0px 56px 112px 0px #25292e52 !important;
+}
+
+.enterprice-card{
+    position: relative;
+    margin-top: 32px;
+}
+
+.free-card { 
+    margin-top: 32px;
+}
+
+.card + .card {
+    margin-left: 24px;    
+}
+
+
+.team-card {
+    margin-top: 32px;
+}
+
+.sales-cards {
+    box-sizing: content-box;
+    margin: 80px auto 0;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+    width: 1248px;
+    padding: 0 16px;
+}
+
+.free-card,
+.team-card,
+.enterprice-card {
+    width: 33.3333333%;
+    text-align: center;
+}
+
+.sales-cards * {
+    font-family: "Mona Sans", "Mona Sans Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.samebutton {
+    display: block;
+    padding: 16px 24px;
+    color: #1f2328;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 1px inset;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1;
+    margin-top: 0.5rem;
+}
+
+.naming {
+    font-family: "Mona Sans";
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.tierInfo {
+    padding: 24px 16px 16px;
+}
+
+.tierDesc {
+    font-size: 14px;
+    display: block;
+    line-height: 1.25;
+    color: #59636E;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricesSpan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+
+sup {
+    position: relative;
+    font-size: 20px;
+    color: #59636E;
+    margin-right: 4px;
+    line-height: 0;
+    top: -0.5em;
+}
+
+.digit {
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.pricesSpan {
+    letter-spacing: -0.01em;
+}
+
+.curr {
+    font-family: "Mona Sans";
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-left: 4px;
+    align-self: flex-end;
+}
+
+.freq { 
+    color: #59636E;
+    font-weight: 400;
+
+}
+
+.startingAt {
+    font-family: "Mona Sans";
+    color: #59636E;
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 1px solid #d1d9e0;
+    font-size: 14px
+}
+
+.enterprice {
+    padding-bottom: 0; 
+}
+
+
+.createTeam {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #1b1f23;
+    color: #fff
+}
+
+.enterprice2buttons {
+    display: flex;
+    
+}
+
+.enterprice1 {
+    width: 49.99999998%;
+    display: block;
+    padding: 16px 24px;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #1b1f23;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1;
+    margin-top: 0.5rem;
+
+}
+
+.enterprice2 {
+    width: 49.99999998%;
+    display: block;
+    padding: 16px 24px;
+    color: #1f2328;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 1px inset;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1;
+    margin-top: 0.5rem;
+}
+
+.enterprice1 + .enterprice2 {
+    margin-left:     16px;
+}
+
+.enterprice-card .tierInfo {
+    background: #fff;
+    border-radius: 0.75em;
+}
+
+.enterprice-card::after {
+    content: '';
+    width: 100%;
+    border-radius: 0.75em;
+    box-sizing: content-box;
+    padding: 32px 8px 8px;
+    position: absolute;
+    top: -32px;
+    left: -8px;
+    margin: auto;
+    height: 100%;
+    background: radial-gradient(circle, #2188ff 0%, #2188ff 48%, #0d74ec 85%, #0d74ec 98%) !important;
+    z-index: -1;
+}
+
+.Rec {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 6px 0;
+    margin-top: -33px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.additionalAdds {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 1248px;
+    text-align: center;
+    margin: 48px auto;
+}
+
+.addText {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #1F2328;
+    font-family: "Mona Sans";
+    font-feature-settings: unset;
+    font-size: 64px !important;
+    line-height: 68px !important;
+}
+
+.sixAdds {
+    max-width: 1280px;
+    padding: 0 16px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+}
+
+svg {
+    margin-bottom: 16px;
+}
+
+.newAdd {
+    margin-bottom: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cardDesc {
+    font-feature-settings: unset;
+    font-weight: 400;
+    color: #59636E;
+    text-decoration: none;
+    font-family: "Mona Sans";
+    font-size: 16px;
+    line-height: 24px !important;
+}
+
+.newAdd {
+    padding: 32px;  
+    box-shadow: 0px 0px 0px 1px #d1d9e0, 0px 56px 112px 0px #25292e52 !important;
+}
+
+
+h3{
+    color: #1F2328;
+    font-weight: 600;
+    font-size: 20px !important;
+    line-height: 24px;
+    margin-bottom: 16px;   
+}
+
+
+.addCard {
+    margin-top: 16px;
+}
+
+.cardIcon {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cardIcon span svg{
+    margin: 0.25rem;
+}
+
+#one svg {
+    fill: #8250DF;
+}
+
+#two svg {
+    fill: #1a7f37
+}
+
+#three svg {
+    fill: #0969DA
+}
+
+#four svg {
+    fill: #bf3989
+}
+
+#five svg {
+    fill: #bc4c00
+}
+
+#six svg {
+    fill: #9a6700;
+}
+.cardIcon #one {
+    background-color: #fbefff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    line-height: 1;
+}
+
+.cardIcon #two {
+    background-color: #dafbe1;
+    border-radius: 50%;
+    padding: 0.5rem;
+    line-height: 1;
+}
+
+.cardIcon #three {
+    background-color: #ddf4ff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    
+    line-height: 1;
+}
+
+.cardIcon #four {
+    background-color: #ffeff7;
+    border-radius: 50%;
+    padding: 0.5rem;
+    
+    line-height: 1;
+}
+
+.cardIcon #five {
+    background-color: #fff1e5;
+    border-radius: 50%;
+    padding: 0.5rem;
+    
+    line-height: 1;
+}   
+
+.cardIcon #six {
+    background-color: #fff8c5;
+    border-radius: 50%;
+    padding: 0.5rem;
+    
+    line-height: 1;
+}
+
+.cardIcon span {
+    margin-bottom: 8px;
+}
