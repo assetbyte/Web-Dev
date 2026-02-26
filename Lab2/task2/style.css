@@ -3,12 +3,28 @@
     margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+.login_container {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 51px 51px 0px 51px;
+    border-bottom: 1px solid #DDE2E8;
+}
+>>>>>>> 940e75257ff7f08695a9bb40c1ebd2c9d1f0949d
 
 .login_container-left {
     width: 70vw;
     height: calc(100vh - 70px);
+<<<<<<< HEAD
     padding: 51px 20px 0px 51px;
 
+=======
+
+    
+    padding-right: 20px;
+>>>>>>> 940e75257ff7f08695a9bb40c1ebd2c9d1f0949d
 }
 
 .hr {
@@ -19,12 +35,17 @@
 .login_container-right {
     max-width: 650px;
     min-width: 550px;
+<<<<<<< HEAD
     
+=======
+    /* min-height: 590px; */
+>>>>>>> 940e75257ff7f08695a9bb40c1ebd2c9d1f0949d
 
     padding-top: 51px;
     padding-left: 49px;
 }
 
+<<<<<<< HEAD
 
 .login_container {
     display: flex;
@@ -33,6 +54,8 @@
 }
 
 
+=======
+>>>>>>> 940e75257ff7f08695a9bb40c1ebd2c9d1f0949d
 .login_desc {
     width: 662px;
     padding-left: 46px;
@@ -53,7 +76,11 @@
 .login_desc span {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+<<<<<<< HEAD
     background-image: linear-gradient(to right, #ff5c00, #ff0069, #d300c5);    
+=======
+        background-image: linear-gradient(to right, #ff5c00, #ff0069, #d300c5);    
+>>>>>>> 940e75257ff7f08695a9bb40c1ebd2c9d1f0949d
 }
 
 .login_logo img {
@@ -194,6 +221,7 @@
 
 .login_meta_logo svg {
     height: 12px;
+<<<<<<< HEAD
 }
 
 .footerContainer {
@@ -233,4 +261,6 @@
     font-weight: 400;
     color: #737373;
     text-decoration: none;
+=======
+>>>>>>> 940e75257ff7f08695a9bb40c1ebd2c9d1f0949d
 }
