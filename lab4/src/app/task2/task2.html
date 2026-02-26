@@ -1,0 +1,30 @@
+<div class="categories">
+  <button *ngFor="let cat of categories" (click)="selectCategory(cat.id)">
+  {{ cat.name }}
+</button>
+</div>
+
+<div *ngIf="!selectedCategoryId">
+  <p>Please select a category</p>
+</div>
+
+<div class="grid" *ngIf="selectedCategoryId">
+  <div class="card" *ngFor="let product of getFilteredProducts()">
+    <img [src]="product.image" alt="{{product.name}}">
+    <h2>{{ product.name }}</h2>
+    <p class="desc">{{ product.description }}</p>
+    <div class="price">{{ product.price }}₸</div>
+    <div class="rating">
+      <span *ngFor="let star of getStars(product.rating)">⭐</span>
+      <span>{{ product.rating }}</span>
+    </div>
+    <div>❤ {{ product.likes }}</div>
+    <div class="buttons">
+      <a [href]="product.link" target="_blank">Open on Kaspi.kz</a>
+      <button (click)="like(product)">Like</button>
+      <button (click)="delete(product)">Delete</button>
+      <button (click)="shareWhatsApp(product)">Share WhatsApp</button>
+      <button (click)="shareTelegram(product)">Share Telegram</button>
+    </div>
+  </div>
+</div>
