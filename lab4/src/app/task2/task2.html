@@ -8,7 +8,11 @@
   <p>Please select a category</p>
 </div>
 
-<div class="grid" *ngIf="selectedCategoryId">
+<div *ngIf="selectedCategoryId && getFilteredProducts().length === 0">
+  <p>No products available in this category.</p>
+</div>
+
+<div class="grid" *ngIf="selectedCategoryId && getFilteredProducts().length > 0">
   <div class="card" *ngFor="let product of getFilteredProducts()">
     <img [src]="product.image" alt="{{product.name}}">
     <h2>{{ product.name }}</h2>

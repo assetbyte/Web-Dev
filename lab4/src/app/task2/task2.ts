@@ -299,8 +299,11 @@ export class Task2 {
   }
 
   delete(product: Product) {
+  const confirmed = confirm(`Delete "${product.name}"?`);
+  if (confirmed) {
     this.products = this.products.filter(p => p.id !== product.id);
   }
+}
 
   
 

@@ -1,0 +1,37 @@
+.album-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.album-item:hover {
+  
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.album-item a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #c0392b;
+}

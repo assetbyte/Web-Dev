@@ -1,0 +1,16 @@
+<h1>Albums</h1>
+
+<div *ngIf="albums$ | async as albums; else loading">
+  <div *ngIf="albums.length > 0">
+    <div *ngFor="let album of albums" class="album-item">
+      <a [routerLink]="['/albums', album.id]">
+        {{ album.title }}
+      </a>
+      <button (click)="deleteAlbum(album.id)">Delete</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div>Loading...</div>
+</ng-template>
