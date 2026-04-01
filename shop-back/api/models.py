@@ -12,5 +12,6 @@ class Product(models.Model):
     count = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='example')
     
+    
     def __str__(self):
         return self.name

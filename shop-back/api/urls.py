@@ -1,10 +1,20 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import CategoryViewSet, ProductViewSet
 
+router = DefaultRouter() 
+router.register(r'categories', CategoryViewSet) 
+router.register(r'products', ProductViewSet) 
 urlpatterns = [
-    path('products/', views.product_list), 
-    path('products/<int:id>/', views.product_detail), 
-    path('categories/', views.category_list), 
-    path('categories/<int:id>/', views.category_detail), 
-    path('categories/<int:id>/products/', views.category_products)
+    path('', include(router.urls)),
 ]
+
+
+# new_cat = Category.objects.create(name="Phones")
+# #Product.objects.create(
+#     name="iPhone 15", 
+#     price=450000, 
+#     description="New phone", 
+#     count=5, 
+#     category=new_cat
+# )
