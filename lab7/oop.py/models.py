@@ -36,3 +36,11 @@ class Cat(Animal):
 
     def scratch(self):
         return f"{self.name} scratches the furniture!"
+
+class Bird (Animal):
+    def __init__(self, name, age, size):
+        super().__init__(name, age, "Bird")
+        self.size = size
+        
+    def speak(self):
+        return "Something ivjdsk"
